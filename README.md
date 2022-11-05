@@ -134,3 +134,9 @@ If you have a problem or a feature request, open an [issue](https://github.com/E
 ### Code Contributors
 
 This project exists thanks to all the people who contribute. [See the contributors list](https://github.com/Edu4rdSHL/findomain/graphs/contributors).
+
+pkg install rust make perl
+pkg install rust
+
+apt-get  install rust make perl
+apt-get install rust

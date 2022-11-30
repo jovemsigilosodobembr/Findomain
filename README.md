@@ -5,17 +5,8 @@
 [![Appveyor CI Status](https://ci.appveyor.com/api/projects/status/github/edu4rdshl/findomain?branch=master&svg=true)](https://ci.appveyor.com/project/edu4rdshl/findomain)
 [![Build status](https://github.com/Edu4rdSHL/findomain/workflows/Github%20Actions/badge.svg)](https://github.com/Edu4rdSHL/findomain/actions)
 
-# Findomain Monitoring Service
 
-If you don't want to deal with servers and complex configurations for doing recon but also have more features in an integrated solution, Findomain offers [a subdomains monitoring service that provides:](https://findomain.app/#Pricing) **directory fuzzing/ports scan/vulnerabilities discovery (with Nuclei) - and more** that allow you to **monitor your target domains with multiple top tools** (OWASP Amass, Sublist3r, Assetfinder and Subfinder) and send alerts to Discord, Slack, Telegram, Email or Push Notifications (Android/iOS/Smart Watch/Desktop) when new subdomains are found. **The only you need to do is configure a file with your email address (if applicable) or/and webhooks/Telegram chat information and put your domains in another file**, once you have done that you have a full automated subdomains monitoring service that keep you up to date with new subdomains discovered, Host IP, HTTP Status, Screenshots of the HTTP websites, Open Ports, Subdomains CNAME and more. All your data is securely saved in a relational database and you can request a dump of your data whenever you want.
 
-When you finish your payment, you will receive an email with the server credentials and documentation about how to fill the configuration file and other details.
-
-**Note:** Our private version is superior to the public version and you can't achieve the same results using the last one, plus if you use our service you help us to keep the project alive and we will release plus features to this repo every X time.
-
-## Pricing
-
-[**See available plans here.**](https://findomain.app/#Pricing)
 
 # Findomain
 
@@ -47,29 +38,7 @@ The tool used to calculate the time, is the `time` command in Linux.
 
 **Summary:** 84110 subdomains in 5.5 seconds.
 
-# Features
 
-* Subdomains monitoring: put data to Discord, Slack or Telegram webhooks.  See [Subdomains Monitoring](README.md#subdomains-monitoring) for more information.
-* Multi-thread support for API querying, it makes that the maximun time that Findomain will take to search subdomains for any target is 15 seconds (in case of API's timeout).
-* Parallel support for subdomains resolution, in good network conditions can resolv about 3.5k of subdomains per minute.
-* DNS over TLS support.
-* Specific IPv4 or IPv6 query support.
-* Discover subdomains without brute-force, it tool uses Certificate Transparency Logs and APIs.
-* Discover only resolved subdomains.
-* Discover subdomains IP for data analysis.
-* Read target from user argument (-t) or file (-f).
-* Write to one unique output file specified by the user all or only resolved subdomains.
-* Write results to automatically named TXT output file(s).
-* Hability to query directly the Findomain database created with [Subdomains Monitoring](docs/INSTALLATION.md#subdomains-monitoring) for previous discovered subdomains.
-* Hability to import and work data discovered by other tools.
-* Quiet mode to run it silently.
-* Cross platform support: Any platform, it's written in Rust and Rust is multiplatform. See [the documentation](docs/INSTALLATION.md#build-for-32-bits-or-another-platform) for instructions.
-* Multiple API support.
-* Possibility to use as subdomain resolver.
-* Subdomain wildcard detection for accurate results. 
-* Support for subdomain discover using bruteforce method.
-* Support for configuration file in TOML, JSON, HJSON, INI or YAML format.
-* Custom DNS IP addresses for fast subdomains resolving (more than 60 per second by default, adjustable using the `--threads` option.
 
 # Findomain in depth
 
